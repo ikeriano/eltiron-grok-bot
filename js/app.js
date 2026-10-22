@@ -1,5 +1,5 @@
 import * as THREE from './three.module.min.js';
-const VERSION='1.1';
+const VERSION='1.2';
 document.getElementById('ver').textContent='El Tirón v'+VERSION;
 const $=s=>document.querySelector(s);
 const UI=$('#ui');
@@ -266,6 +266,7 @@ function Lt(a='main'){
   if(a==='main'){
     r.append(mbtn('Jugar','Clasificación con 3 aspirantes y final contra el campeón, o directo a la final','gold',()=>Lt('play')),
       mbtn('Opciones','Tu nombre, forma de responder, sonido, voz, calidad gráfica','',()=>Lt('options')),
+      mbtn('Ver cabecera','La cabecera real del programa de Telecinco','',async()=>{salirMenu();await cabecera();menu();}),
       mbtn('La historia de El Tirón','Nacho Tirado te cuenta la historia del programa','hist',()=>{salirMenu();historia(true);}),
       mbtn('Cómo se juega','Las reglas del concurso','',()=>Lt('help')),
       mbtn('Créditos','','',()=>Lt('credits')));
@@ -302,6 +303,7 @@ function Lt(a='main'){
   }
   const l=document.createElement('div');l.className='mver';l.textContent='v'+VERSION;n.appendChild(l);n.append(i,r);e.appendChild(n);
 }
+function cabecera(){return new Promise(res=>{render3D=false;paraMusica();UI.innerHTML='';const c=document.createElement('div');c.id='cab';const v=document.createElement('video');v.src='vid/cabecera.mp4';v.playsInline=true;v.setAttribute('playsinline','');v.preload='auto';v.volume=(A.volMus??1);c.appendChild(v);document.body.appendChild(c);let hecho=false;const fin=()=>{if(hecho)return;hecho=true;v.pause();c.remove();render3D=true;UI.innerHTML='';res();};const b=document.createElement('button');b.className='btn peq rosa cabsalta';b.textContent='Saltar ⏭';b.onclick=e=>{e.stopPropagation();fin();};c.appendChild(b);v.onended=fin;v.onerror=fin;v.play().catch(()=>{v.muted=true;v.play().catch(fin);});});}
 function salirMenu(){orbita=false;$('#ver').style.display='';if(menuEl)menuEl.classList.add('oculto');paraMusica();}
 function botonSaltar(txt='Saltar ⏭'){const b=document.createElement('button');b.className='btn peq rosa';b.textContent=txt;const e=document.createElement('div');e.className='esq';e.appendChild(b);UI.appendChild(e);return b;}
 async function historia(volver){
@@ -313,7 +315,7 @@ async function historia(volver){
 // ---------- partida ----------
 let partida;const MUJ=['Concha','Marta','Lucía','Elena','Carmen','Nuria'];
 async function jugar(){
-  UI.innerHTML='';saltar=false;
+  await cabecera();UI.innerHTML='';saltar=false;
   const nombres=['Rafa','Concha','Antonio','Marta','Javier','Lucía','Paco','Elena','Sergio','Carmen','Óscar','Nuria'].filter(n=>n!==EST.campeon.nombre&&n!==A.nombre);
   const iker={nombre:A.nombre,humano:true,av:0};
   const camp=EST.campeon;const campeon=camp.ia?{nombre:camp.nombre,humano:false,av:camp.av??2,dinero:camp.dinero}:{...iker,dinero:EST.dineroIker};

@@ -1,6 +1,6 @@
 # El Tirón · juego de fans (Android + web)
 
-**▶️ [Jugar en el navegador](https://ikeriano.github.io/eltiron-grok-bot/)** · **📱 [APK v1.0](https://github.com/ikeriano/eltiron-grok-bot/releases/tag/v1.0)**
+**▶️ [Jugar en el navegador](https://ikeriano.github.io/eltiron-grok-bot/)** · **📱 [APK v1.2](https://github.com/ikeriano/eltiron-grok-bot/releases/tag/v1.2)**
 
 Juego creado por Iker, inspirado en el concurso de Telecinco (2019-2020). Todo es original: plató 3D (three.js), voz del presentador «Nacho Tirado» (Piper, español de España), sonidos y música sintetizados.
 
