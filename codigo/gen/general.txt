@@ -1,0 +1,284 @@
+¿Cuántos días tiene un año bisiesto?|366|365|364|360
+¿Cuántos jugadores tiene un equipo de fútbol en el campo?|11|10|9|12
+¿Cuántos jugadores tiene un equipo de baloncesto en la pista?|5|6|7|4
+¿Cuántas patas tiene una araña?|8|6|10|12
+¿Cuántas patas tiene un insecto?|6|8|4|10
+¿Cuál es el planeta más grande del sistema solar?|Júpiter|Saturno|Neptuno|Tierra
+¿Cuál es el planeta más cercano al Sol?|Mercurio|Venus|Marte|Tierra
+¿Qué planeta es conocido como el planeta rojo?|Marte|Venus|Júpiter|Mercurio
+¿Qué planeta tiene los anillos más famosos?|Saturno|Urano|Marte|Venus
+¿Cuál es el satélite natural de la Tierra?|La Luna/luna|Fobos|Titán|Europa
+¿Cuál es el océano más grande del mundo?|Pacífico/océano pacífico|Atlántico|Índico|Ártico
+¿Cuál es el río más largo de España?|Tajo|Ebro|Duero|Guadalquivir
+¿Qué río pasa por Sevilla?|Guadalquivir|Guadiana|Tajo|Ebro
+¿Qué río pasa por Zaragoza?|Ebro|Duero|Tajo|Júcar
+¿Qué río pasa por Madrid?|Manzanares|Tajo|Henares|Jarama
+¿Qué río pasa por Londres?|Támesis|Sena|Danubio|Rin
+¿Qué río pasa por París?|Sena|Loira|Ródano|Támesis
+¿Cuál es el monte más alto de España?|Teide|Mulhacén|Aneto|Veleta
+¿Cuál es el pico más alto de la península ibérica?|Mulhacén|Aneto|Teide|Almanzor
+¿Cuál es la montaña más alta del mundo?|Everest|K2|Kilimanjaro|Aconcagua
+¿Cuál es el desierto cálido más grande del mundo?|Sahara|Gobi|Kalahari|Atacama
+¿En qué continente está Egipto?|África|Asia|Europa|Oceanía
+¿Cuál es la lengua oficial de Brasil?|Portugués|Español|Brasileño|Inglés
+¿Cuál es la moneda de Japón?|Yen|Yuan|Won|Rupia
+¿Cuál es la moneda del Reino Unido?|Libra/libra esterlina|Euro|Dólar|Corona
+¿En qué año llegó Colón a América?|1492|1493|1488|1500
+¿En qué año se aprobó la Constitución española actual?|1978|1975|1982|1977
+¿En qué año entró España en la Comunidad Económica Europea?|1986|1982|1992|1977
+¿En qué año se celebraron los Juegos Olímpicos de Barcelona?|1992|1988|1996|1982
+¿En qué año se celebró el Mundial de fútbol en España?|1982|1978|1986|1990
+¿En qué año ganó España su primer Mundial de fútbol?|2010|2008|2012|2014
+¿En qué país se celebró el Mundial de fútbol de 2010?|Sudáfrica|Brasil|Alemania|Japón
+¿Quién marcó el gol de España en la final del Mundial de 2010?|Iniesta/Andrés Iniesta|Xavi|Villa|Torres
+¿En qué año cayó el muro de Berlín?|1989|1991|1985|1979
+¿En qué año llegó el hombre a la Luna?|1969|1967|1971|1965
+¿Quién fue el primer hombre en pisar la Luna?|Neil Armstrong/Armstrong|Buzz Aldrin|Yuri Gagarin|Michael Collins
+¿Quién fue el primer ser humano en viajar al espacio?|Yuri Gagarin/Gagarin|Neil Armstrong|John Glenn|Laika
+¿En qué año empezó la Primera Guerra Mundial?|1914|1918|1912|1939
+¿En qué año terminó la Segunda Guerra Mundial?|1945|1944|1939|1950
+¿En qué año empezó la guerra civil española?|1936|1939|1931|1934
+¿En qué año se proclamó la Segunda República española?|1931|1923|1936|1929
+¿En qué año se introdujeron los billetes y monedas de euro?|2002|1999|2000|2004
+¿Qué rey sucedió a Juan Carlos I?|Felipe VI|Felipe V|Alfonso XIII|Carlos IV
+¿Cómo se llama la reina de España, esposa de Felipe VI?|Letizia|Sofía|Leonor|Elena
+¿Cómo se llama la princesa de Asturias?|Leonor|Sofía|Cristina|Elena
+¿Cuál es el hueso más largo del cuerpo humano?|Fémur|Tibia|Húmero|Peroné
+¿Cuántos huesos tiene aproximadamente el cuerpo humano adulto?|206|186|226|306
+¿Qué órgano bombea la sangre?|Corazón|Hígado|Pulmón|Riñón
+¿Cuál es el órgano más grande del cuerpo humano?|Piel/la piel|Hígado|Intestino|Cerebro
+¿Cuántos dientes tiene un adulto con la dentadura completa?|32|28|30|36
+¿Qué gas respiramos para vivir?|Oxígeno|Nitrógeno|Helio|Hidrógeno
+¿Qué gas es el más abundante en el aire?|Nitrógeno|Oxígeno|Dióxido de carbono|Argón
+¿Cuál es la fórmula química del agua?|H2O|CO2|O2|H2O2
+¿A qué temperatura hierve el agua al nivel del mar, en grados Celsius?|100|90|80|120
+¿A qué temperatura se congela el agua, en grados Celsius?|0|-10|4|10
+¿Cuál es el animal terrestre más rápido?|Guepardo|León|Gacela|Caballo
+¿Cuál es el animal más grande del planeta?|Ballena azul|Elefante africano|Tiburón ballena|Jirafa
+¿Qué animal es el rey de la selva según el dicho?|León|Tigre|Elefante|Gorila
+¿Cómo se llama la cría de la vaca?|Ternero/becerro|Potro|Cordero|Lechón
+¿Cómo se llama la cría del caballo?|Potro|Ternero|Cabrito|Pollino
+¿Cómo se llama la cría de la oveja?|Cordero|Cabrito|Lechón|Potro
+¿Qué animal pone huevos y es un mamífero?|Ornitorrinco|Canguro|Delfín|Murciélago
+¿Cuál es el único mamífero capaz de volar?|Murciélago|Ardilla voladora|Colibrí|Lémur
+¿De qué se alimenta principalmente el oso panda?|Bambú|Pescado|Miel|Hierba
+¿Cuántos colores tiene el arcoíris?|7|6|5|8
+¿Qué color se obtiene al mezclar azul y amarillo?|Verde|Morado|Naranja|Marrón
+¿Qué color se obtiene al mezclar rojo y amarillo?|Naranja|Verde|Rosa|Morado
+¿Qué color se obtiene al mezclar rojo y azul?|Morado/violeta|Verde|Naranja|Marrón
+¿Cuántos lados tiene un hexágono?|6|5|7|8
+¿Cuántos lados tiene un pentágono?|5|6|4|7
+¿Cuántos lados tiene un octógono?|8|6|10|12
+¿Cuántos grados suman los ángulos de un triángulo?|180|90|360|270
+¿Cuánto vale el número pi redondeado a dos decimales?|3,14/3.14|3,41|3,12|3,16
+¿Cuántos minutos tiene una hora?|60|100|50|90
+¿Cuántos segundos tiene un minuto?|60|100|30|120
+¿Cuántas horas tiene un día?|24|12|20|48
+¿Cuántos meses tiene un año?|12|10|11|13
+¿Cuántos días tiene la semana?|7|5|6|8
+¿Qué mes tiene 28 días en un año normal?|Febrero|Abril|Junio|Noviembre
+¿Cuántos años tiene un siglo?|100|1000|50|10
+¿Cuántos años tiene una década?|10|100|5|20
+¿Cuántos años tiene un milenio?|1000|100|10000|500
+¿Cuántos centímetros tiene un metro?|100|10|1000|50
+¿Cuántos gramos tiene un kilo?|1000|100|10000|500
+¿Cuántos metros tiene un kilómetro?|1000|100|10000|500
+¿Cuántos jugadores tiene un equipo de balonmano en la pista?|7|6|5|11
+¿Cuántos puntos vale un triple en baloncesto?|3|2|4|1
+¿Cada cuántos años se celebran los Juegos Olímpicos de verano?|4|2|3|5
+¿Cuántos anillos tiene la bandera olímpica?|5|4|6|7
+¿Qué tenista español ha ganado 14 veces Roland Garros?|Rafa Nadal/Rafael Nadal/Nadal|Carlos Alcaraz|Carlos Moyá|David Ferrer
+¿En qué deporte destacó Pau Gasol?|Baloncesto|Fútbol|Balonmano|Tenis
+¿En qué deporte compite Fernando Alonso?|Fórmula 1/automovilismo|Motociclismo|Ciclismo|Rally
+¿En qué deporte destacó Miguel Induráin?|Ciclismo|Atletismo|Natación|Tenis
+¿En qué deporte destaca Marc Márquez?|Motociclismo/MotoGP|Fórmula 1|Ciclismo|Rally
+¿Qué selección ganó la Eurocopa de 2024?|España|Inglaterra|Francia|Italia
+¿Qué equipo de fútbol juega en el Santiago Bernabéu?|Real Madrid|Atlético de Madrid|Getafe|Rayo Vallecano
+¿Qué equipo de fútbol juega en el Camp Nou?|Barcelona/FC Barcelona|Espanyol|Girona|Valencia
+¿En qué ciudad está el estadio de Mestalla?|Valencia|Sevilla|Bilbao|Málaga
+¿En qué ciudad está el estadio de San Mamés?|Bilbao|San Sebastián|Vitoria|Pamplona
+¿En qué ciudad está la Sagrada Familia?|Barcelona|Madrid|Valencia|Sevilla
+¿En qué ciudad está la Alhambra?|Granada|Córdoba|Sevilla|Málaga
+¿En qué ciudad está la Mezquita-Catedral más famosa de España?|Córdoba|Granada|Toledo|Sevilla
+¿En qué ciudad está la Giralda?|Sevilla|Córdoba|Granada|Cádiz
+¿En qué ciudad está el museo Guggenheim de España?|Bilbao|Madrid|Barcelona|Valencia
+¿En qué ciudad está el acueducto romano más famoso de España?|Segovia|Tarragona|Mérida|Ávila
+¿En qué ciudad termina el Camino de Santiago?|Santiago de Compostela/Santiago|Lugo|León|Oviedo
+¿En qué ciudad está el museo del Prado?|Madrid|Barcelona|Sevilla|Toledo
+¿En qué ciudad está la torre Eiffel?|París|Lyon|Londres|Bruselas
+¿En qué ciudad está el Coliseo?|Roma|Atenas|Milán|Nápoles
+¿En qué ciudad está la Estatua de la Libertad?|Nueva York|Washington|Boston|Chicago
+¿En qué país están las pirámides de Guiza?|Egipto|México|Sudán|Marruecos
+¿En qué país está Machu Picchu?|Perú|Bolivia|México|Chile
+¿En qué país está la Gran Muralla?|China|Japón|Mongolia|Corea
+¿En qué país está el Taj Mahal?|India|Pakistán|Irán|Nepal
+¿En qué ciudad está el Big Ben?|Londres|Edimburgo|Dublín|Mánchester
+¿En qué ciudad está la torre inclinada más famosa de Italia?|Pisa|Florencia|Roma|Venecia
+¿Qué ciudad italiana es famosa por sus canales y góndolas?|Venecia|Florencia|Milán|Nápoles
+¿Cuál es el país más grande del mundo por superficie?|Rusia|Canadá|China|Estados Unidos
+¿Cuál es el país más poblado del mundo según la ONU desde 2023?|India|China|Estados Unidos|Indonesia
+¿Cuántas comunidades autónomas tiene España?|17|15|19|16
+¿Cuántas provincias tiene España?|50|52|48|47
+¿Cuáles son las dos ciudades autónomas de España?|Ceuta y Melilla|Ceuta y Tánger|Melilla y Gibraltar|Andorra y Gibraltar
+¿Qué islas españolas están en el océano Atlántico?|Canarias/islas canarias|Baleares|Columbretes|Medas
+¿En qué isla está Palma?|Mallorca|Menorca|Ibiza|Tenerife
+¿Qué idioma cooficial se habla en Galicia?|Gallego|Euskera|Catalán|Asturiano
+¿Qué idioma cooficial se habla en el País Vasco?|Euskera/vasco|Gallego|Catalán|Aranés
+¿Qué comida típica española lleva arroz y se asocia a Valencia?|Paella|Gazpacho|Fabada|Cocido
+¿Qué sopa fría típica de Andalucía se hace con tomate?|Gazpacho|Fabada|Pisto|Cocido
+¿De qué comunidad es típica la fabada?|Asturias|Galicia|Cantabria|Navarra
+¿Cuál es el ingrediente principal del guacamole?|Aguacate|Tomate|Pimiento|Pepino
+¿De qué país es originaria la pizza?|Italia|Grecia|Francia|Estados Unidos
+¿De qué país es típico el sushi?|Japón|China|Corea|Tailandia
+¿Qué fruta es amarilla, alargada y típica de Canarias?|Plátano|Piña|Mango|Papaya
+¿De qué planta se obtiene el chocolate?|Cacao|Café|Vainilla|Caña
+¿Quién compuso la Novena Sinfonía con el Himno de la Alegría?|Beethoven/Ludwig van Beethoven|Mozart|Bach|Vivaldi
+¿Quién compuso Las cuatro estaciones?|Vivaldi/Antonio Vivaldi|Bach|Mozart|Haydn
+¿Quién compuso La flauta mágica?|Mozart/Wolfgang Amadeus Mozart|Beethoven|Verdi|Wagner
+¿Cuántas cuerdas tiene una guitarra española?|6|4|5|12
+¿Cuántas teclas tiene un piano estándar?|88|76|96|64
+¿Cómo se llamaba el grupo de Freddie Mercury?|Queen|The Beatles|ABBA|Genesis
+¿De qué ciudad eran The Beatles?|Liverpool|Londres|Mánchester|Dublín
+¿Con qué canción ganó Massiel Eurovisión?|La, la, la/la la la|Vivo cantando|Eres tú|Bailar pegados
+¿Con qué canción ganó Salomé Eurovisión en 1969?|Vivo cantando|La, la, la|Eres tú|Bandido
+¿Qué cantante española quedó tercera en Eurovisión 2022 con SloMo?|Chanel|Rosalía|Blanca Paloma|Edurne
+¿Cómo se llama el ratón más famoso de Disney?|Mickey Mouse/Mickey|Jerry|Speedy|Pinky
+¿Cómo se llama el muñeco de madera al que le crece la nariz?|Pinocho|Geppetto|Pepito Grillo|Petete
+¿Cómo se llama el amigo de Mortadelo?|Filemón|Zipi|Carpanta|Rompetechos
+¿Quién creó a Mortadelo y Filemón?|Francisco Ibáñez/Ibáñez|Quino|Hergé|Escobar
+¿Cómo se llama el perro de Tintín?|Milú|Snoopy|Pluto|Rantanplán
+¿Quién creó a Mafalda?|Quino|Ibáñez|Forges|Mingote
+¿Cómo se llama la hermana de Bart Simpson que toca el saxofón?|Lisa|Maggie|Marge|Patty
+¿Quién dirigió la película Tiburón?|Steven Spielberg/Spielberg|George Lucas|Martin Scorsese|Ridley Scott
+¿Qué director español ganó el Óscar por Todo sobre mi madre?|Pedro Almodóvar/Almodóvar|Alejandro Amenábar|Fernando Trueba|José Luis Garci
+¿Qué actor español ganó el Óscar por No es país para viejos?|Javier Bardem/Bardem|Antonio Banderas|Jordi Mollà|Luis Tosar
+¿Qué actriz española ganó el Óscar por Vicky Cristina Barcelona?|Penélope Cruz|Paz Vega|Elsa Pataky|Maribel Verdú
+¿En qué ciudad se entregan los premios Óscar?|Los Ángeles|Nueva York|Londres|Cannes
+¿Qué premios del cine español llevan el nombre de un pintor?|Goya/premios goya|Velázquez|Dalí|Picasso
+¿En qué ciudad se celebra el festival de cine más importante de España?|San Sebastián|Málaga|Valladolid|Sitges
+¿Qué famosa saga tiene a Luke Skywalker?|Star Wars/La guerra de las galaxias|Star Trek|Dune|Alien
+¿Cómo se llama el mago protagonista de la saga de J. K. Rowling?|Harry Potter|Gandalf|Merlín|Frodo
+¿Cuál es el metal más caro: oro o plata?|Oro|Plata|Son iguales|Bronce
+¿Qué metal es líquido a temperatura ambiente?|Mercurio|Plomo|Estaño|Galio
+¿Cuál es el material natural más duro?|Diamante|Granito|Acero|Cuarzo
+¿Qué unidad mide la corriente eléctrica?|Amperio|Voltio|Vatio|Ohmio
+¿Qué científico formuló E = mc²?|Albert Einstein/Einstein|Isaac Newton|Niels Bohr|Galileo
+¿Quién descubrió la penicilina?|Alexander Fleming/Fleming|Louis Pasteur|Marie Curie|Robert Koch
+¿Qué científica ganó dos premios Nobel en física y química?|Marie Curie/Curie|Rosalind Franklin|Ada Lovelace|Lise Meitner
+¿Qué científico español ganó el Nobel de Medicina en 1906?|Santiago Ramón y Cajal/Ramón y Cajal|Severo Ochoa|Margarita Salas|Gregorio Marañón
+¿Cómo se llama la estrella más cercana a la Tierra?|Sol/el sol|Sirio|Próxima Centauri|Polaris
+¿Cuántos planetas tiene el sistema solar?|8|9|7|10
+¿Qué planeta dejó de considerarse planeta en 2006?|Plutón|Ceres|Neptuno|Eris
+¿Cuánto tarda la Tierra en dar una vuelta alrededor del Sol?|Un año/365 días/1 año|Un mes|Un día|Una semana
+¿Qué parte de la planta realiza la fotosíntesis principalmente?|Hoja/hojas|Raíz|Tallo|Flor
+¿Cómo se llama el pigmento verde de las plantas?|Clorofila|Melanina|Caroteno|Hemoglobina
+¿Cuál es el árbol que da las bellotas?|Encina/roble|Pino|Olivo|Castaño
+¿De qué árbol se obtiene el aceite de oliva?|Olivo|Almendro|Encina|Naranjo
+¿Qué país produce más aceite de oliva del mundo?|España|Italia|Grecia|Túnez
+¿Qué idioma tiene más hablantes nativos en el mundo?|Chino mandarín/chino/mandarín|Inglés|Español|Hindi
+¿Cuántas letras tiene el abecedario español?|27|26|28|29
+¿Qué letra tiene el español que no tiene el inglés?|Ñ|Ç|W|K
+¿Cuál es el plural de 'lápiz'?|Lápices|Lápizes|Lápiz|Lápisés
+¿Qué es un palíndromo?|Palabra que se lee igual al revés/se lee igual al revés|Palabra muy larga|Sinónimo|Palabra extranjera
+¿Cuál es el antónimo de 'alto'?|Bajo|Grande|Largo|Ancho
+¿Cuál es el sinónimo de 'rápido'?|Veloz|Lento|Pesado|Torpe
+¿Qué institución limpia, fija y da esplendor a la lengua española?|Real Academia Española/RAE|Instituto Cervantes|Academia de Cine|Biblioteca Nacional
+¿Qué cadena emitió Pasapalabra entre 2009 y 2019?|Telecinco|Antena 3|La 1|Cuatro
+¿Qué cadena emite actualmente Pasapalabra?|Antena 3|Telecinco|La 1|Cuatro
+¿Cómo se llama la prueba final de Pasapalabra?|El Rosco/rosco|La Pista|La Escalera|El Tirón
+¿Qué presentador condujo Saber y ganar durante décadas?|Jordi Hurtado|Carlos Sobera|Christian Gálvez|Arturo Valls
+¿Quién presenta ¡Ahora caigo! en Antena 3?|Arturo Valls|Roberto Leal|Carlos Sobera|Jorge Fernández
+¿Qué concurso presentaba Mayra Gómez Kemp?|Un, dos, tres/Un dos tres|El precio justo|La ruleta de la suerte|Pasapalabra
+¿Cómo se llamaba la calabaza del Un, dos, tres?|Ruperta|Rosita|Rita|Remedios
+¿Quién presenta La ruleta de la suerte en Antena 3?|Jorge Fernández|Arturo Valls|Roberto Leal|Juanra Bonet
+¿Qué festividad se celebra el 6 de enero en España?|Reyes/Reyes Magos/epifanía|Navidad|Año Nuevo|San Juan
+¿En qué ciudad se celebran los Sanfermines?|Pamplona|Bilbao|Logroño|Burgos
+¿En qué ciudad se celebran las Fallas?|Valencia|Alicante|Castellón|Murcia
+¿En qué pueblo valenciano se celebra la Tomatina?|Buñol|Requena|Xàtiva|Gandía
+¿Qué se come en España con las campanadas de Nochevieja?|Uvas/12 uvas/doce uvas|Turrón|Lentejas|Polvorones
+¿En qué reloj se retransmiten tradicionalmente las campanadas?|Puerta del Sol/Sol|Plaza Mayor|Cibeles|Gran Vía
+¿Qué monumento madrileño es una diosa en un carro tirado por leones?|Cibeles|Neptuno|Puerta de Alcalá|El Oso y el Madroño
+¿Qué símbolo de Madrid es un oso junto a un árbol?|El Oso y el Madroño/oso y el madroño|Cibeles|Neptuno|Puerta de Alcalá
+¿Cuántas estrellas tiene la bandera de la Unión Europea?|12|15|27|10
+¿Qué colores tiene la bandera de España?|Rojo y amarillo/rojo y gualda|Rojo y blanco|Azul y amarillo|Verde y blanco
+¿Qué colores tiene la bandera de Italia?|Verde, blanco y rojo/verde blanco y rojo|Azul, blanco y rojo|Rojo y amarillo|Negro, rojo y amarillo
+¿Qué color tiene el círculo de la bandera de Japón?|Rojo|Blanco|Azul|Amarillo
+¿Qué animal aparece en la bandera de Gales?|Dragón|León|Águila|Unicornio
+¿Qué país tiene una hoja de arce en su bandera?|Canadá|Suiza|Austria|Nueva Zelanda
+¿Cuál es el idioma oficial de México?|Español|Mexicano|Náhuatl|Inglés
+¿Cuál es la capital de la Comunidad Valenciana?|Valencia|Alicante|Castellón|Elche
+¿Cuál es la capital de Andalucía?|Sevilla|Málaga|Granada|Córdoba
+¿Cuál es la capital de Galicia?|Santiago de Compostela/Santiago|A Coruña|Vigo|Lugo
+¿Cuál es la capital de Castilla y León (sede de gobierno)?|Valladolid|Burgos|León|Salamanca
+¿Cuál es la capital de Extremadura?|Mérida|Badajoz|Cáceres|Plasencia
+¿Cuál es la capital de Castilla-La Mancha?|Toledo|Albacete|Ciudad Real|Cuenca
+¿Cuál es la capital de Canarias (compartida con Las Palmas)?|Santa Cruz de Tenerife|La Laguna|Arrecife|Puerto del Rosario
+¿Cuál es la capital del País Vasco?|Vitoria/Vitoria-Gasteiz|Bilbao|San Sebastián|Getxo
+¿Cuántos corazones tiene un pulpo?|3|1|2|4
+¿Cuántas cámaras tiene el estómago de una vaca?|4|2|3|1
+¿Qué ave es símbolo de la paz?|Paloma|Águila|Cigüeña|Golondrina
+¿Qué animal es famoso por cambiar de color?|Camaleón|Iguana|Salamandra|Gecko
+¿Qué animal fabrica la miel?|Abeja|Avispa|Hormiga|Mariposa
+¿Qué insecto es famoso por transformarse desde una oruga?|Mariposa|Escarabajo|Mosca|Abeja
+¿Dónde viven los pingüinos emperador?|Antártida|Ártico|Groenlandia|Alaska
+¿Qué animal es el símbolo de Australia junto al emú?|Canguro|Koala|Ornitorrinco|Dingo
+¿Cuál es el ave más grande del mundo?|Avestruz|Emú|Cóndor|Albatros
+¿Cuántas patas tiene un pulpo... o mejor dicho, cuántos brazos?|8|6|10|12
+¿Cómo se llama el miedo a las arañas?|Aracnofobia|Claustrofobia|Acrofobia|Agorafobia
+¿Cómo se llama el miedo a las alturas?|Acrofobia|Aracnofobia|Claustrofobia|Hidrofobia
+¿Qué palabra designa a un grupo de lobos?|Manada|Bandada|Banco|Enjambre
+¿Qué palabra designa a un grupo de peces?|Banco/cardumen|Manada|Rebaño|Piara
+¿Qué palabra designa a un grupo de abejas?|Enjambre|Bandada|Manada|Recua
+¿Qué videoconsola creó Sony?|PlayStation|Xbox|Switch|Game Boy
+¿Cómo se llama el fontanero de Nintendo?|Mario/Super Mario|Luigi|Link|Wario
+¿Cómo se llama el erizo azul de SEGA?|Sonic|Tails|Knuckles|Shadow
+¿Cómo se llama el protagonista de The Legend of Zelda?|Link|Zelda|Ganon|Mario
+¿Qué empresa fabrica el iPhone?|Apple|Samsung|Xiaomi|Google
+¿De qué país es la marca Xiaomi?|China|Japón|Corea del Sur|Taiwán
+¿De qué país es la marca Samsung?|Corea del Sur|Japón|China|Taiwán
+¿Qué sistema operativo para móviles desarrolla Google?|Android|iOS|Windows|Linux
+¿Qué significa la sigla ONU?|Organización de las Naciones Unidas|Organización Nacional Unida|Oficina de Naciones Unidas|Organización Neutral Unida
+¿Qué significa la sigla DNI?|Documento Nacional de Identidad|Documento Nominal Interno|Dato Nacional Identificativo|Documento Nuevo de Identidad
+¿En qué ciudad tiene su sede la ONU?|Nueva York|Ginebra|Bruselas|Washington
+¿En qué ciudad tiene su sede el Parlamento Europeo (sede oficial)?|Estrasburgo|Bruselas|Luxemburgo|París
+¿Cómo se llama el parlamento de España?|Cortes Generales/Cortes|Congreso Federal|Asamblea Nacional|Senado Real
+¿Cuántos diputados tiene el Congreso de los Diputados?|350|300|400|250
+¿Quién fue el primer presidente del Gobierno de la democracia española tras 1977?|Adolfo Suárez/Suárez|Felipe González|Leopoldo Calvo-Sotelo|José María Aznar
+¿Qué rey de España fue proclamado en 1975?|Juan Carlos I|Felipe VI|Alfonso XIII|Carlos III
+¿Qué reyes financiaron el viaje de Colón?|Reyes Católicos/Isabel y Fernando|Felipe II y Ana|Carlos I y Juana|Alfonso X y Violante
+¿Qué emperador gobernó España y el Sacro Imperio en el siglo XVI?|Carlos I/Carlos V|Felipe II|Felipe III|Fernando VII
+¿En qué año terminó la Reconquista con la toma de Granada?|1492|1453|1512|1476
+¿Qué rey de España mandó construir El Escorial?|Felipe II|Carlos I|Felipe IV|Carlos III
+¿Qué batalla naval de 1805 perdió España frente a Nelson?|Trafalgar|Lepanto|Cabo San Vicente|Abukir
+¿En qué batalla naval de 1571 participó Cervantes?|Lepanto|Trafalgar|Las Navas de Tolosa|Pavía
+¿Cómo se llamaba el caballo de Don Quijote?|Rocinante|Babieca|Bucéfalo|Rucio
+¿Cómo se llamaba el escudero de Don Quijote?|Sancho Panza/Sancho|Dulcinea|Rocinante|Lazarillo
+¿Cómo se llamaba el caballo del Cid?|Babieca|Rocinante|Bucéfalo|Tizona
+¿Cómo se llama la espada más famosa del Cid?|Tizona|Excalibur|Colada|Durandarte
+¿Qué civilización construyó Chichén Itzá?|Maya/mayas|Azteca|Inca|Olmeca
+¿Qué civilización tenía su capital en Cuzco?|Inca/incas|Maya|Azteca|Olmeca
+¿Quién fue el primer emperador de Roma?|Augusto|Julio César|Nerón|Calígula
+¿Qué faraón tiene la tumba más famosa descubierta en 1922?|Tutankamón|Ramsés II|Keops|Akenatón
+¿En qué país nació Napoleón Bonaparte (isla de Córcega)?|Francia|Italia|España|Grecia
+¿Qué océano cruzó el Titanic?|Atlántico|Pacífico|Índico|Ártico
+¿En qué año se hundió el Titanic?|1912|1905|1921|1898
+¿Qué barco se usó en la primera vuelta al mundo de Elcano?|Nao Victoria/Victoria|Santa María|La Pinta|Trinidad
+¿Quién completó la primera vuelta al mundo?|Juan Sebastián Elcano/Elcano|Fernando de Magallanes|Cristóbal Colón|Vasco da Gama
+¿Cómo se llamaban las tres carabelas de Colón?|La Pinta, la Niña y la Santa María/pinta niña santa maría|La Victoria, la Trinidad y la Concepción|La Pinta, la Victoria y la Trinidad|La Niña, la Victoria y la Concepción
+¿Qué deporte se juega en Wimbledon?|Tenis|Golf|Críquet|Pádel
+¿Qué deporte practica un torero... perdón, en qué deporte se usa un tee?|Golf|Tenis|Polo|Críquet
+¿Cuántos hoyos tiene un recorrido de golf completo?|18|9|12|24
+¿Cuánto mide una maratón en kilómetros (aproximadamente)?|42/42,195|21|50|40
+¿En qué deporte se hace un mate?|Baloncesto|Voleibol|Tenis|Balonmano
+¿En qué deporte se usa un volante con plumas?|Bádminton|Pádel|Squash|Tenis
+¿De qué país es originario el pádel?|México|España|Argentina|Estados Unidos
+¿Qué país ha ganado más Mundiales de fútbol masculino?|Brasil|Alemania|Italia|Argentina
+¿Qué selección ganó el Mundial de 2022?|Argentina|Francia|Brasil|Croacia
+¿Qué futbolista argentino ganó el Mundial de 2022 como capitán?|Lionel Messi/Messi|Diego Maradona|Ángel Di María|Sergio Agüero
+¿Qué selección española ganó el Mundial femenino de 2023?|España|Inglaterra|Suecia|Estados Unidos
+¿Qué jugadora española ganó el Balón de Oro en 2021 y 2022?|Alexia Putellas/Alexia|Aitana Bonmatí|Jenni Hermoso|Irene Paredes
+¿Qué jugadora española ganó el Balón de Oro en 2023?|Aitana Bonmatí/Aitana|Alexia Putellas|Jenni Hermoso|Olga Carmona
+¿Qué tenista español ganó Wimbledon en 2023 y 2024?|Carlos Alcaraz/Alcaraz|Rafa Nadal|David Ferrer|Pablo Carreño
+¿Qué nadadora española es conocida como Mireia?|Mireia Belmonte/Belmonte|Gemma Mengual|Ona Carbonell|Erika Villaécija
+¿Qué jugador de baloncesto español fue apodado 'el Chacho'?|Sergio Rodríguez|Juan Carlos Navarro|Ricky Rubio|Rudy Fernández
+¿Qué jugador de baloncesto español fue apodado 'la Bomba'?|Juan Carlos Navarro/Navarro|Sergio Rodríguez|Pau Gasol|Felipe Reyes
