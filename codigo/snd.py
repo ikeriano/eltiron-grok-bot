@@ -50,3 +50,4 @@ mel=[659,587,659,784,880,784,659,587]
 for i,f in enumerate(mel*4):
     s=int(i*beat*R); c=tone(f*2,beat*0.9,'sq',r=0.3)*0.12; o[s:s+len(c)]+=c[:n-s]
 save('outro',o)
+save('tecla',mix(tone(1500,0.06,'sin',r=0.02),tone(2200,0.05,'sin',r=0.015)*0.5))

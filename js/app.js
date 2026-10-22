@@ -1,5 +1,5 @@
 import * as THREE from './three.module.min.js';
-const VERSION='1.0';
+const VERSION='1.1';
 document.getElementById('ver').textContent='El Tirón v'+VERSION;
 const $=s=>document.querySelector(s);
 const UI=$('#ui');
@@ -16,11 +16,11 @@ let EST=Object.assign({bote:50000,programa:1,campeon:{nombre:'Andrés',dinero:12
 const guardaE=()=>localStorage.setItem('tiron_estado',JSON.stringify(EST));
 
 // ---------- audio ----------
-const SND={};
-['ding','buzz','beep','beep0','chime','tictac','outro'].forEach(n=>{SND[n]=new Audio('snd/'+n+'.mp3');SND[n].preload='auto';});
+const REAL=['buzz','beep0','chime','outro'];const sndUrl=n=>'snd/'+n+(REAL.includes(n)?'.ogg':'.mp3');const SND={};
+['ding','buzz','beep','beep0','chime','tictac','outro','tecla'].forEach(n=>{SND[n]=new Audio(sndUrl(n));SND[n].preload='auto';});
 function sfx(n,vol=1){try{const a=SND[n].cloneNode();a.volume=vol;a.play().catch(()=>{});}catch(e){}}
 let bed=null;
-function musica(n,loop=true){paraMusica();if(!A.musica)return;bed=new Audio('snd/'+n+'.mp3');bed.loop=loop;bed.volume=.45;bed.play().catch(()=>{});}
+function musica(n,loop=true){paraMusica();if(!A.musica)return;bed=new Audio(sndUrl(n));bed.loop=loop;bed.volume=.45*(A.volMus??1);bed.play().catch(()=>{});}
 function paraMusica(){if(bed){bed.pause();bed=null;}}
 let vozActual=null,saltar=false;
 const SUB=$('#sub');
@@ -165,12 +165,12 @@ const VISTAS={
 };
 function vista(n,inst){camara(VISTAS[n][0],VISTAS[n][1],inst);}
 function primerPlano(i){const p=pFinal[i].position;camara([p.x+(i?-0.45:0.45),1.9,p.z+3.0],[p.x+(i?-0.45:0.45),1.6,p.z],false);}
-let render3D=true,fiesta=false,t0=performance.now(),last=0;
+const s0=()=>performance.now()/1000;let render3D=true,fiesta=false,t0=performance.now(),last=0;
 function loop(t){
   requestAnimationFrame(loop);
   const fps=calidad()==='baja'?30:60;if(t-last<1000/fps-2)return;const dt=Math.min(0.1,(t-last)/1000);last=t;
   if(!render3D)return;
-  const k=1-Math.pow(0.04,dt);camC.p.lerp(camT.p,k);camC.l.lerp(camT.l,k);cam.position.copy(camC.p);cam.lookAt(camC.l);
+  if(orbita){const an=s0()*0.06;camT.p.set(Math.sin(an)*10.5,3.6,Math.cos(an)*10.5);camT.l.set(0,1.8,-1.5);}const k=1-Math.pow(0.04,dt);camC.p.lerp(camT.p,k);camC.l.lerp(camT.l,k);cam.position.copy(camC.p);cam.lookAt(camC.l);
   const s=t/1000;
   if(presenter){presenter.rotation.z=Math.sin(s*1.3)*0.015;presenter.userData.boca.scale.y=presenterTalk?1+3*Math.abs(Math.sin(s*14)):1;}
   [...pClasif,...pFinal].forEach((p,i)=>p.rotation.z=Math.sin(s*1.1+i)*0.012);
@@ -238,31 +238,71 @@ const dific={facil:{c:0.45,f:0.7},normal:{c:0.62,f:0.8},dificil:{c:0.78,f:0.88}}
 
 // ---------- pantallas ----------
 function logoHTML(sz){return `<div class="logo" style="font-size:${sz}">el Tirón<svg class="sw" viewBox="0 0 100 30" preserveAspectRatio="none"><path d="M2 8 Q50 34 92 6" fill="none" stroke="#fff" stroke-width="2.4" style="filter:drop-shadow(0 0 2px #bff)"/><path d="M86 9 L93 3 L96 12" fill="none" stroke="#fff" stroke-width="2.2"/></svg></div>`;}
-function menu(){
-  fiesta=false;paraMusica();render3D=true;vista('logo',true);vista('general');
-  UI.innerHTML=`<div class="menu">${logoHTML('min(19vw,24vh)')}<button class="btn" id="bj">Jugar</button><button class="btn" id="bo">Opciones</button><button class="btn peq rosa" id="bh">Historia del programa</button><div style="font-size:min(4vw,2.8vh);opacity:.85">Idioma: Español · Bote: ${fmtEur(EST.bote)} · Programa ${EST.programa}</div></div>`;
-  $('#bj').onclick=()=>jugar();$('#bo').onclick=opcionesP;$('#bh').onclick=()=>historia(true);
+// ===== Menú: misma estructura que ¡Ahora Caigo! (título → menú principal → submenús) =====
+let orbita=false,menuEl=null,yaTitulo=false;
+function logoCanvas(cls){const c=document.createElement('canvas');c.width=560;c.height=500;c.className=cls;const g=c.getContext('2d');dibujaLogo(g,280,270,150);return c;}
+function mbtn(t,s,cls,fn){const b=document.createElement('button');b.className='mbtn '+cls;b.innerHTML=`<span class="fp"></span><span>${t}${s?`<small>${s}</small>`:''}</span>`;b.onclick=e=>{e.stopPropagation();sfx('tecla',.7);fn();};return b;}
+function volverB(a){const b=document.createElement('button');b.className='tbtn back';b.innerHTML='⟵ Volver';b.onclick=e=>{e.stopPropagation();sfx('tecla',.7);Lt(a);};return b;}
+function h2(t){const e=document.createElement('h2');e.textContent=t;return e;}
+function fila(lbl,...els){const r=document.createElement('div');r.className='orow';const l=document.createElement('label');l.textContent=lbl;r.append(l,...els);return r;}
+function siNo(k,cb){const b=document.createElement('button');const p=()=>{b.className='tbtn'+(A[k]?' sel':'');b.textContent=A[k]?'Sí':'No';};b.onclick=e=>{e.stopPropagation();A[k]=!A[k];guardaA();p();sfx('tecla',.7);cb&&cb();};p();return b;}
+function elige(k,ops,cb){return ops.map(([v,t])=>{const b=document.createElement('button');b.className='tbtn'+(String(A[k])===String(v)?' sel':'');b.textContent=t;b.onclick=e=>{e.stopPropagation();A[k]=v;guardaA();sfx('tecla',.7);b.parentElement.querySelectorAll('.tbtn').forEach(x=>x.classList.toggle('sel',x===b));cb&&cb();};return b;});}
+function entrarMenu(){fiesta=false;restaurarLuces();render3D=true;grFinal.visible=true;grClasif.visible=false;orbita=true;UI.innerHTML='';if(!bed||bed.dataset.n!=='menu'){musica('outro');if(bed){bed.volume=.3*(A.volMus??1);bed.dataset.n='menu';}}}
+function menu(){Lt(yaTitulo?'main':'title');}
+function Lt(a='main'){
+  entrarMenu();
+  if(!menuEl){menuEl=document.createElement('div');menuEl.id='menu';document.body.appendChild(menuEl);}
+  const e=menuEl;e.classList.remove('oculto');$('#ver').style.display='none';e.innerHTML='';
+  if(a==='title'){
+    const u=document.createElement('div');u.className='title';const d=document.createElement('div');d.className='tsub';d.textContent='El juego';const f=document.createElement('div');f.className='ttap';f.textContent='Toca para empezar';
+    u.append(logoCanvas('tlogo'),d,f);e.appendChild(u);
+    const p=v=>{v.stopPropagation();e.removeEventListener('pointerup',p);removeEventListener('keydown',p);yaTitulo=true;sfx('chime',.6);entrarMenu();Lt('main');};
+    e.addEventListener('pointerup',p);addEventListener('keydown',p);return;
+  }
+  const n=document.createElement('div');n.className='mbox';
+  const i=document.createElement('div');i.className='logo';i.appendChild(logoCanvas('mlogo'));
+  const o=document.createElement('div');o.className='mtag';o.textContent='EL JUEGO · 3D';i.appendChild(o);
+  const r=document.createElement('div');r.className='col ui';
+  if(a==='main'){
+    r.append(mbtn('Jugar','Clasificación con 3 aspirantes y final contra el campeón, o directo a la final','gold',()=>Lt('play')),
+      mbtn('Opciones','Tu nombre, forma de responder, sonido, voz, calidad gráfica','',()=>Lt('options')),
+      mbtn('La historia de El Tirón','Nacho Tirado te cuenta la historia del programa','hist',()=>{salirMenu();historia(true);}),
+      mbtn('Cómo se juega','Las reglas del concurso','',()=>Lt('help')),
+      mbtn('Créditos','','',()=>Lt('credits')));
+  }else if(a==='play'){
+    r.append(h2(`Programa ${EST.programa} · Bote ${fmtEur(EST.bote)}`),
+      mbtn('Programa completo','Fase de clasificación (5 segundos, rebote, 7 aciertos) y final con tirones contra el campeón','gold',()=>{A.modo='clasif';guardaA();salirMenu();jugar();}),
+      mbtn('Directo a la final','150 segundos cada uno: 12 aciertos seguidos y te llevas el bote','',()=>{A.modo='final';guardaA();salirMenu();jugar();}),
+      mbtn('Historia del programa','La versión larga, con chistes','hist',()=>{salirMenu();historia(true);}),
+      h2('Campeón actual'));
+    const t=document.createElement('div');t.className='mtext';t.innerHTML=`<p><b>${EST.campeon.nombre}</b> · ${EST.campeon.programas} programa(s) · ${fmtEur(EST.campeon.dinero||0)}</p>`;r.append(t,volverB('main'));
+  }else if(a==='options'){
+    r.appendChild(h2('Opciones'));
+    const nom=document.createElement('input');nom.className='otext';nom.value=A.nombre;nom.maxLength=14;nom.onclick=e=>e.stopPropagation();nom.oninput=()=>{A.nombre=nom.value.trim()||'Iker';guardaA();};
+    const vol=document.createElement('input');vol.type='range';vol.min=0;vol.max=100;vol.value=Math.round((A.volMus??1)*100);vol.oninput=()=>{A.volMus=vol.value/100;guardaA();if(bed)bed.volume=.3*A.volMus;};
+    r.append(fila('👤 Tu nombre',nom),
+      fila('🌐 Idioma',...elige('idioma',[['es','Español']])),
+      fila('🎵 Música',siNo('musica',()=>{if(!A.musica)paraMusica();else entrarMenu();}),vol),
+      fila('🎤 Voz del presentador',siNo('voz')),
+      fila('😄 Historia corta al empezar',siNo('intro')),
+      fila('✍️ Responder',...elige('respuesta',[['escribir','Escribir'],['opciones','Elegir entre 4']])),
+      fila('⏱ Segundos (clasificación)',...elige('tClasif',[[5,'5'],[8,'8'],[12,'12']])),
+      fila('🤖 Nivel de los rivales',...elige('dific',[['facil','Fácil'],['normal','Normal'],['dificil','Difícil']])),
+      fila('🎯 Mínimo 25 aciertos',siNo('min25')),
+      fila('✨ Calidad gráfica',...elige('calidad',[['auto','Auto'],['baja','Baja'],['alta','Alta']],()=>{ajustaTam();construyeSet();})));
+    const rs=document.createElement('button');rs.className='tbtn';rs.textContent='Reiniciar';rs.onclick=e=>{e.stopPropagation();EST={bote:50000,programa:1,campeon:{nombre:'Andrés',dinero:12000,programas:3,ia:true,av:2},dineroIker:0};guardaE();Lt('options');};
+    r.append(fila(`💰 Bote (${fmtEur(EST.bote)}) y campeón`,rs));
+    const x=document.createElement('p');x.className='mtext';x.textContent='Si el juego va lento en tu móvil, elige calidad «Baja».';r.append(x,volverB('main'));
+  }else if(a==='help'){
+    r.classList.add('text');r.append(volverB('main'),h2('Cómo se juega'));const u=document.createElement('div');u.className='mtext';
+    u.innerHTML=`<p><b>Clasificación:</b> tres aspirantes en el banquillo. El presentador pregunta y tienes <b>5 segundos</b>. Si fallas o pasas, la pregunta rebota al siguiente. El primero en llegar a <b>7 aciertos</b> gana 500 € y pasa a la final.</p><p><b>La final:</b> contra el campeón. Cada uno tiene <b>150 segundos</b>. Contestas seguido (un «tirón»): cada acierto enciende un escalón. Si fallas o pasas, la escalera vuelve a cero, tu reloj se para y le toca al otro.</p><p><b>El bote:</b> con <b>12 aciertos seguidos</b> te lo llevas. Si nadie lo consigue, gana quien tenga más aciertos (1.000 €) y vuelve al día siguiente. Opcional: mínimo de 25 aciertos.</p><p>Puedes escribir la respuesta (no importan tildes ni pequeñas erratas) o elegir entre 4 en Opciones.</p>`;r.append(u);
+  }else if(a==='credits'){
+    r.classList.add('text');r.append(volverB('main'),h2('Créditos'));const u=document.createElement('div');u.className='mtext';
+    u.innerHTML=`<p><b>Idea y dirección</b><br>Iker (Ikeriano)</p><p><b>Presentador virtual</b><br>Nacho Tirado (voz sintética Piper, español de España)</p><p><b>Música y sonidos</b><br>Originales, sintetizados para el juego</p><p class="small">Versión ${VERSION}. Juego de fans sin ánimo de lucro inspirado en «El Tirón» (Telecinco, 2019-2020); no está afiliado a ninguna cadena. El presentador es un personaje inventado.</p>`;r.append(u);
+  }
+  const l=document.createElement('div');l.className='mver';l.textContent='v'+VERSION;n.appendChild(l);n.append(i,r);e.appendChild(n);
 }
-function opcionesP(){
-  const sel=(id,ops,v)=>`<select id="${id}">${ops.map(([k,t])=>`<option value="${k}" ${String(v)===String(k)?'selected':''}>${t}</option>`).join('')}</select>`;
-  UI.innerHTML=`<div class="panel"><h2>Opciones</h2>
-  <div class="op">Tu nombre<input id="o_nombre" value="${A.nombre}" maxlength="14"></div>
-  <div class="op">Idioma${sel('o_idioma',[['es','Español']],'es')}</div>
-  <div class="op">Empezar por${sel('o_modo',[['clasif','Fase de clasificación (3 aspirantes)'],['final','Directo a la final']],A.modo)}</div>
-  <div class="op">Forma de responder${sel('o_respuesta',[['escribir','Escribir la respuesta'],['opciones','Elegir entre 4 (niños)']],A.respuesta)}</div>
-  <div class="op">Segundos por pregunta (clasificación)${sel('o_t',[[5,'5 (como en la tele)'],[8,'8'],[12,'12']],A.tClasif)}</div>
-  <div class="op">Nivel de los rivales${sel('o_d',[['facil','Fácil'],['normal','Normal'],['dificil','Difícil']],A.dific)}</div>
-  <div class="op">Mínimo de 25 aciertos${sel('o_min',[['true','Sí (regla de nov. 2019)'],['false','No']],A.min25)}</div>
-  <div class="op">Voz del presentador${sel('o_voz',[['true','Sí'],['false','No']],A.voz)}</div>
-  <div class="op">Música y sonidos de fondo${sel('o_mus',[['true','Sí'],['false','No']],A.musica)}</div>
-  <div class="op">Historia corta al empezar${sel('o_intro',[['true','Sí'],['false','No']],A.intro)}</div>
-  <div class="op">Calidad gráfica${sel('o_cal',[['auto','Automática'],['baja','Baja (móviles sencillos)'],['alta','Alta']],A.calidad)}</div>
-  <div class="op">Bote actual: ${fmtEur(EST.bote)}<button class="btn peq" id="o_reset">Reiniciar bote y campeón</button></div>
-  <div style="display:flex;gap:3vw;justify-content:center;margin-top:3vh;flex-wrap:wrap"><button class="btn peq rosa" id="o_hist">Historia del programa</button><button class="btn peq" id="o_ok">Guardar y volver</button></div></div>`;
-  $('#o_reset').onclick=()=>{localStorage.removeItem('tiron_estado');EST={bote:50000,programa:1,campeon:{nombre:'Andrés',dinero:12000,programas:3,ia:true,av:2},dineroIker:0};guardaE();opcionesP();};
-  const lee=()=>{A.nombre=$('#o_nombre').value.trim()||'Iker';A.modo=$('#o_modo').value;A.respuesta=$('#o_respuesta').value;A.tClasif=+$('#o_t').value;A.dific=$('#o_d').value;A.min25=$('#o_min').value==='true';A.voz=$('#o_voz').value==='true';A.musica=$('#o_mus').value==='true';A.intro=$('#o_intro').value==='true';const c=A.calidad;A.calidad=$('#o_cal').value;guardaA();if(c!==A.calidad){ajustaTam();construyeSet();}};
-  $('#o_ok').onclick=()=>{lee();menu();};$('#o_hist').onclick=()=>{lee();historia(true);};
-}
+function salirMenu(){orbita=false;$('#ver').style.display='';if(menuEl)menuEl.classList.add('oculto');paraMusica();}
 function botonSaltar(txt='Saltar ⏭'){const b=document.createElement('button');b.className='btn peq rosa';b.textContent=txt;const e=document.createElement('div');e.className='esq';e.appendChild(b);UI.appendChild(e);return b;}
 async function historia(volver){
   render3D=true;UI.innerHTML='';saltar=false;const b=botonSaltar();b.onclick=()=>{saltar=true;cortaVoz();};
